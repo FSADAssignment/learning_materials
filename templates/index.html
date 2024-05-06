@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Language Learning</h1>
+    </header>
+
+    <main>
+        <section class="language">
+            <h2>French</h2>
+            <div id="french-video" class="content">
+                <!-- Embed French YouTube video -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FRENCH_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="french-pdf" class="content" style="display: none;">
+                <!-- Link to French PDF -->
+                <a href="path/to/your/french.pdf" target="_blank">French PDF</a>
+            </div>
+            <button id="toggle-french">View More</button>
+        </section>
+
+        <section class="language">
+            <h2>Spanish</h2>
+            <div id="spanish-video" class="content">
+                <!-- Embed Spanish YouTube video -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SPANISH_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="spanish-pdf" class="content" style="display: none;">
+                <!-- Link to Spanish PDF -->
+                <a href="path/to/your/spanish.pdf" target="_blank">Spanish PDF</a>
+            </div>
+            <button id="toggle-spanish">View More</button>
+        </section>
+
+        <section class="language">
+            <h2>English</h2>
+            <div id="english-video" class="content">
+                <!-- Embed English YouTube video -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ENGLISH_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="english-pdf" class="content" style="display: none;">
+                <!-- Link to English PDF -->
+                <a href="path/to/your/english.pdf" target="_blank">English PDF</a>
+            </div>
+            <button id="toggle-english">View More</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Language Learning</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
